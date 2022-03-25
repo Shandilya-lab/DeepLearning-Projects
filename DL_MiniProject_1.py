@@ -81,7 +81,12 @@ class ResNet(nn.Module):
 def Our_ResNet():
     return ResNet(BasicBlock, [2, 1, 1, 1])
 
-
+#####################################################################################
+    # Instantiate and Build the Model
+#####################################################################################
+# Model
+print('==> Building model..')
+net = Our_ResNet()
 
 #####################################################################################
     # Terminal Argument to parsed in order to decide whether to start from scracth 
@@ -104,13 +109,6 @@ if args.resume:
     start_epoch = checkpoint['epoch']
     
     
-#####################################################################################
-    # Instantiate and Build the Model
-#####################################################################################
-# Model
-print('==> Building model..')
-net = Our_ResNet()
-
 #####################################################################################
     # Append Dropout2d after each instance of BatchNorm2d 
     # without disturbing the architecture
@@ -295,7 +293,7 @@ def test(epoch):
         # based on the remaining number of epochs
 #####################################################################################
 
-for epoch in range(start_epoch, start_epoch+1):
+for epoch in range(start_epoch, start_epoch+250):
     train(epoch)
     test(epoch)
     scheduler.step()
