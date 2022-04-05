@@ -12,3 +12,7 @@ execute: $ python DL_MiniProject.py
 
 If required to resume the model from the saved checkpoint:
 execute: $ python DL_MiniProject.py --resume
+
+## Changes made to make self_eval.py compatible:
+- Changed the filename and function name to project1_model in out model file.
+- Changed the Normalization values according to our chosen one in the self_eval file.
