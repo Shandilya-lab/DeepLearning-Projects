@@ -43,14 +43,15 @@ execute: $ python DL_MiniProject.py --resume
 |             ReLU-14|                 [-1, 1024]|               0|
 |          Dropout-15|                 [-1, 1024]|               0|
 |           Linear-16|                    [-1, 5]|           5,125|
-================================================================
-Total params: 205,897,861
-Trainable params: 205,897,861
-Non-trainable params: 0
+
+
+- Total params: 205,897,861
+- Trainable params: 205,897,861
+- Non-trainable params: 0
 ----------------------------------------------------------------
-Input size (MB): 0.57
-Forward/backward pass size (MB): 107.21
-Params size (MB): 785.44
-Estimated Total Size (MB): 893.22
+- Input size (MB): 0.57
+- Forward/backward pass size (MB): 107.21
+- Params size (MB): 785.44
+- Estimated Total Size (MB): 893.22
 ----------------------------------------------------------------
 ### With Best Accuracy: 77.447%
