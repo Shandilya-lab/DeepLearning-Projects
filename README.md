@@ -55,3 +55,5 @@ execute: $ python DL_MiniProject.py --resume
 - Estimated Total Size (MB): 893.22
 ----------------------------------------------------------------
 ### With Best Accuracy: 77.447%
+
+### Next Step: Experiment with Hybrid CNN models involving either LSTM or SPP.
